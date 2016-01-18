@@ -6,7 +6,7 @@ class NewVisitorTest(unittest.TestCase):
 
     def setUp(self):
         self.browser = webdriver.Firefox()
-        self.browser.implicitly_wait(3)
+        self.browser.implicitly_wait(10)
 
     def tearDown(self):
         self.browser.quit()
@@ -40,7 +40,6 @@ class NewVisitorTest(unittest.TestCase):
         # She visits that URL - her to-do list is still there.
 
         # Satisfied she goes to sleep.
-
 
     if __name__ == '__main__':
         unittest.main(warnings='ignore')
